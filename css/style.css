@@ -1,0 +1,58 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800");
+
+/* body {
+  height: 100vh;
+  perspective: 1800px;
+} */
+
+.cards {
+  display: inline-block;
+  min-width: 590px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px 20px #0000002b;
+  padding: 30px 35px;
+  margin: 60px 35px;
+  perspective: 1800px;
+  text-align: left;
+  transform-origin: 50% 50%;
+  font-family: "Open Sans", sans;
+  transform-style: preserve-3d;
+  transform: rotateX(11deg) rotateY(16.5deg);
+}
+
+h1 {
+  color: #3e3e42;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  transform: translateZ(35px);
+}
+
+h3 {
+  color: #eb285d;
+  font-size: 18px;
+  margin-bottom: 6px;
+  transform: translateZ(25px);
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px -5px #00000099;
+  display: inline-block;
+  height: 250px;
+  overflow: hidden;
+  perspective: 1200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(35px);
+  transition: transform 200ms ease-out;
+  width: 175px;
+  text-align: center;
+}
+
+.img {
+  position: relative;
+  height: 100%;
+}
