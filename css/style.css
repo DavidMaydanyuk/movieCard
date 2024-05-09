@@ -52,7 +52,72 @@ h3 {
   text-align: center;
 }
 
+.card:not(:last-child) {
+  /*Targets all elements with the class "card" except for the last one*/
+  margin-right: 30px;
+}
+
 .img {
   position: relative;
   height: 100%;
+}
+
+.bg {
+  position: absolute;
+  inset: -50px;
+  transform-origin: 50% 50%;
+  transform: translateZ(-50px);
+  z-index: -10px;
+}
+
+.one .img {
+  top: 14px;
+  right: -10px;
+  height: 110%;
+}
+
+.one .bg {
+  background: url("https://codetheworld.io/wp-content/uploads/2024/02/monobg.jpeg")
+    center/cover no-repeat;
+}
+
+.two .img {
+  top: 25px;
+}
+
+.two .bg {
+  background: url("https://codetheworld.io/wp-content/uploads/2024/02/spiritedbg.jpeg")
+    center/cover no-repeat;
+}
+
+.three .img {
+  top: 5px;
+  left: -4px;
+  height: 110%;
+}
+
+.three .bg {
+  background: url("https://codetheworld.io/wp-content/uploads/2024/02/howlbg.jpeg")
+    center/cover no-repeat;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  background: linear-gradient(to bottom, #00000000 0%, #0000008c 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 10px;
+  margin-bottom: 3px;
 }
