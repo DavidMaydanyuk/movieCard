@@ -3,16 +3,17 @@ const images = document.querySelectorAll(".img");
 const backgrounds = document.querySelectorAll(".bg");
 const range = 40;
 const calcValue = (a, b) => ((a / b) * range - range / 2).toFixed(1);
-let timeout;
+//let timeout;
 
 document.addEventListener(
   "mousemove",
   ({ x, y }) => {
-    if (timeout) {
-      window.cancelAnimationFrame(timeout);
-    }
+    // if (timeout) {
+    //   window.cancelAnimationFrame(timeout);
+    // }
+    // cancels any previous animation, to avoid unnecessary calculations
 
-    timeout = window.requestAnimationFrame(() => {
+    let timeout = window.requestAnimationFrame(() => {
       const yValue = calcValue(y, window.innerHeight);
       const xValue = calcValue(x, window.innerWidth);
       cards.style.transform = `rotateX(${yValue}deg) rotateY(${xValue}deg)`;
