@@ -1,6 +1,6 @@
 HTML Structure:
-The HTML code provided a structure for a webpage featuring movie cards.
-Each card displayed an image of a movie along with its title.
+The HTML code provided a structure for a webpage featuring movie card.
+Card displayed an image of a movie along with its title.
 
 CSS Styling:
 CSS styles were applied to create a visually appealing layout for the movie cards.
